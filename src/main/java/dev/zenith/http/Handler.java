@@ -1,4 +1,6 @@
 package dev.zenith.http;
 
-public class Handler {
+@FunctionalInterface
+public interface Handler {
+    Response handle(Request req) throws Exception;
 }
